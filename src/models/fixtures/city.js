@@ -1,12 +1,10 @@
 import fixture from 'can-fixture';
 
-const store = fixture.store([{
-  name: 0,
-  description: 'First item'
-}, {
-  name: 1,
-  description: 'Second item'
-}]);
+const store = fixture.store([
+  { state: 'CA', name: 'Casadina' },
+  { state: 'NT', name: 'Alberny' }
+],{});
+
 
 fixture({
   'GET /api/cities': store.findAll,
