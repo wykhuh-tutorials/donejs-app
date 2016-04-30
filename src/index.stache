@@ -7,6 +7,8 @@
     <can-import from="place-my-order/app" export-as="viewModel" />
 
     <h1>{{message}}</h1>
+    <h2>Test</h2>
+    <h2>{{foo}}</h2>
 
     {{#switch env.NODE_ENV}}
       {{#case "production"}}

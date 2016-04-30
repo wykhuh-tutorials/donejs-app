@@ -6,11 +6,11 @@ import 'can/route/pushstate/';
 const AppViewModel = Map.extend({
   define: {
     message: {
-      value: 'Hello World!',
+      value: 'Hello World! I\'m hungry.',
       serialize: false
     },
     title: {
-      value: 'place-my-order',
+      value: 'Place My Order',
       serialize: false
     }
   }
