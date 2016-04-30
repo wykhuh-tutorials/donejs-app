@@ -43,6 +43,7 @@
     "generator-donejs": "^0.9.0",
     "jquery": "~2.2.1",
     "place-my-order-api": "^0.4.4",
+    "place-my-order-assets": "^0.1.7",
     "steal": "^0.16.0"
   },
   "devDependencies": {
