@@ -3,11 +3,18 @@ import Map from 'can/map/';
 import 'can/map/define/';
 import './list.less!';
 import template from './list.stache!';
+import Restaurant from 'place-my-order/models/restaurant';
 
 export const ViewModel = Map.extend({
   define: {
-    message: {
-      value: 'This is the pmo-restaurant-list component'
+    // add restaurants property that can be access in template.
+    // restaurants will have a list a restaurants from the server
+
+    // restaurants returns a promise.
+    restaurants: {
+      value() {
+        return Restaurant.getList({});
+      }
     }
   }
 });
