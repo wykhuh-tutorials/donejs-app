@@ -9,6 +9,7 @@ import Restaurant from 'place-my-order/models/restaurant';
 import State from 'place-my-order/models/state';
 import City from 'place-my-order/models/city';
 
+// Map creates an observable 
 export const ViewModel = Map.extend({
   // define rules for each property
   define: {
@@ -29,7 +30,7 @@ export const ViewModel = Map.extend({
       }
     },
     cities: {
-      // when state property changes, we get new list of cities 
+      // when state property changes, we get new list of cities
       get() {
         let state = this.attr('state');
 

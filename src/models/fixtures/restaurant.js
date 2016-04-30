@@ -1,5 +1,6 @@
 import fixture from 'can-fixture';
 
+// fixture.store allows you to fake filtering, pagination, etc
 const store = fixture.store([{
   _id: 1,
   name: 'Cheese City',

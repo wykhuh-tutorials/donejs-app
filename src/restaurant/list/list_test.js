@@ -12,6 +12,7 @@ QUnit.module('place-my-order/restaurant/list', {
 
 QUnit.asyncTest('loads all states', function() {
   var vm = new ViewModel();
+  // get the fake states fixtures
   var expectedStates = stateStore.findAll({});
 
   vm.attr('states').then(states => {
