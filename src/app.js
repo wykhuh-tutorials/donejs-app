@@ -6,7 +6,7 @@ import 'can/route/pushstate/';
 const AppViewModel = Map.extend({
   define: {
     title: {
-      value: 'Place My Order',
+      value: 'place-my-order',
       serialize: false
     }
   }

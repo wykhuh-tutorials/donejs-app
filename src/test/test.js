@@ -1,4 +1,4 @@
-import 'place-my-order/models/test';
+// load all tests in apps
 import 'place-my-order/test/functional';
 
 
