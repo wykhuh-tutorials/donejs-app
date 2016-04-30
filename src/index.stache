@@ -18,14 +18,9 @@
     <!-- load component based on url -->
     {{#switch page}}
       {{#case "home"}}
-        <can-import from="place-my-order/home.component">
-          {{#isPending}}
-             promise is pending
-          {{/isPending}}
-          {{#isResolved}}
-            promise is revolved
-            <pmo-home/>
-          {{/isResolved}}
+        <can-import from="place-my-order/home.component"
+            can-tag="pmo-loading">
+          <pmo-home/>
         </can-import>
       {{/case}}
       {{#case "restaurants"}}
