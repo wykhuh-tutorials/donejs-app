@@ -5,15 +5,16 @@ import 'can/route/pushstate/';
 
 const AppViewModel = Map.extend({
   define: {
-    message: {
-      value: 'Hello World! I\'m hungry.',
-      serialize: false
-    },
     title: {
       value: 'Place My Order',
       serialize: false
     }
   }
 });
+
+
+route(':page', { page: 'home' });
+route(':page/:slug', { slug: null });
+route(':page/:slug/:action', { slug: null, action: null });
 
 export default AppViewModel;
